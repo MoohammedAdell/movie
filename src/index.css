@@ -95,6 +95,9 @@
 
   .all-movies {
     @apply space-y-9;
+    & h3 {
+      @apply text-xl font-bold text-white line-clamp-1 ml-2;
+    }
 
     & h2 {
       @apply flex items-center justify-between;
@@ -116,7 +119,26 @@
       }
 
       & .content {
-        @apply p-4;
+        @apply p-4 flex flex-wrap items-center gap-2 text-xs;
+      }
+
+      & .rating {
+        @apply flex items-center gap-2  text-yellow-400;
+
+        & img {
+          @apply w-5 h-5 object-contain;
+        }
+
+        & p {
+          @apply text-sm text-light-200;
+        }
+      }
+      & .year {
+        @apply text-light-100;
+      }
+
+      & .lang {
+        @apply text-light-100 font-medium;
       }
 
       & h3 {
